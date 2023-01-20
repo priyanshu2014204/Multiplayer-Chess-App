@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/chessboard-1.0.0.min.js"></script>
+    <style>
+      body {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      div {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainboard">
+      <div id="board" style="width: 600px"></div>
+      
+      <div style="margin: auto">
+        <div id="player"></div>
+        <div id="roomNumbers">Enter a room number between 0 and 99</div>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <input type="number" id="room" min="0" max="99" class="form-control form-control-md number">
+                </div>
+                <div class="col">
+ 
+             
+                    <button id="button" class="btn btn-success" onclick="connect()">Connect</button>
+                </div>
+            </div>
+        </form>
+ 
+        <div id="state" onclick="connect()">Join Game</div>
+    </div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+<script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js" integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD" crossorigin="anonymous"></script> -->
+
+<script
+  src="https://cdn.socket.io/4.5.4/socket.io.min.js"
+  integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI"
+  crossorigin="anonymous"
+></script>
+<script src="https://github.com/jhlywa/chess.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"
+  integrity="sha512-xRllwz2gdZciIB+AkEbeq+gVhX8VB8XsfqeFbUh+SzHlN96dEduwtTuVuc2u9EROlmW9+yhRlxjif66ORpsgVA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="index.js">
+ 
+
+</script>
